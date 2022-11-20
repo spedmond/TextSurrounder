@@ -17,9 +17,9 @@ public class MyClass {
         System.out.println();
 
         String last = "";
-        while (str.indexOf("\n")!=-1) {
+        while (str.contains("\n")) {
             String temp = str.substring(0, str.indexOf("\n"));
-            if (str.substring(str.indexOf("\n") + 1).indexOf("\n")!=-1) {
+            if (str.substring(str.indexOf("\n") + 1).contains("\n")) {
                 last = str.substring(str.indexOf("\n") + 1);
             }
             str = str.substring(str.indexOf("\n") + 1);
